@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from "prop-types"
-import { generateID } from './utils'
+// import { generateID } from './utils'
 const Table = ({labels,data,minShow,maxShow,handleSort,sort,sortedData,}) => {
   const {column,isDesc}=sort
   return (
