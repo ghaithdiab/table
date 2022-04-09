@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import DisplayEntries from './DisplayEntries'
 import Search from './Search'
 import ShowingEntries from './ShowingEntries'
 import Table from './Table'
@@ -15,6 +16,12 @@ const DataTable = ({labels,data}) => {
   const maxShow=currentPage * entriesShown < data.length ? currentPage * entriesShown : data.length
   const minFilterdShow=currentPage === 1 ? sortedData.length > 0 ? 1 : 0 :(currentPage - 1) * entriesShown+1
   const maxfilterdShow=currentPage * entriesShown < sortedData.length ? currentPage*entriesShown : sortedData.length
+
+    // Handle the changes of displayed entries
+    const handleEntriesChange = (evt) => {
+      setEntriesShown(parseInt(evt.target.value));
+      setCurrentPage(1);
+    };
   //Handel the sorting Data (column+asc/desc)
   const handleSort=(label)=>{
     if(sort.column===label){
@@ -25,6 +32,7 @@ const DataTable = ({labels,data}) => {
   }
   return (
     <div className='data-table'>
+      <DisplayEntries value={entriesShown} handleChange={handleEntriesChange}/>
       <Search
         data={data}
         handleDisplayedData={setSortedData}
