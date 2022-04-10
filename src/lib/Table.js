@@ -8,13 +8,13 @@ const Table = ({labels,data,minShow,maxShow,handleSort,sort,sortedData,}) => {
       <thead>
         <tr className='table-header-row'>
           {/* first row of labels */}
-          {labels.map((lablel)=>(
-            <th key={"_" + Math.random().toString(36).substring(2,9)} className='tabel-header-cell'>
+          {labels.map((label)=>(
+            <th key={"_" + Math.random().toString(36).substring(2,9)} className='tabel-header-cell' onClick={()=>handleSort(label.value)}>
               <div className='tabel-header-cell-content'>
-                <span>{lablel.text}</span>
+                <span>{label.text}</span>
                 <div className='tabel-header-cell-icons'>
-                  <div className={column===lablel.value ?!isDesc ? 'tabel-arrow-up active' :'table-arrow-up inactive' :'tabel-arrow-up'}></div>
-                  <div className={column===lablel.value ?!isDesc ? 'tabel-arrow-down active' :'table-arrow-down inactive' :'tabel-arrow-down'}></div>
+                  <div className={column===label.value ?!isDesc ? 'tabel-arrow-up active' :'table-arrow-up inactive' :'tabel-arrow-up'}></div>
+                  <div className={column===label.value ?!isDesc ? 'tabel-arrow-down active' :'table-arrow-down inactive' :'tabel-arrow-down'}></div>
                 </div>
               </div>
             </th>
