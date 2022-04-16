@@ -5,9 +5,9 @@ import PropTypes from "prop-types";
  */
 const DisplayEntries = ({value,handleChange}) => {
   return (
-    <div className='table-entries'>
-      <label htmlFor='table-select'>{`Show `}</label>
-      <select name='table-enties' id='table-select' value={value} onChange={(evt)=>handleChange(evt)}>
+    <div className='dtb-entries'>
+      <label htmlFor='dtb-entries-select'>{`Show `}</label>
+      <select name='table-enties' id='dtb-entries-select' value={value} onChange={(evt)=>handleChange(evt)}>
         <option value='10'>10</option>
         <option value='25'>25</option>
         <option value='50'>50</option>

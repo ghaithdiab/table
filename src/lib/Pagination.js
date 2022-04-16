@@ -16,8 +16,8 @@ const Pagination = ({currentPage,totalEntries,displayedEntries,handleClick}) => 
     };
   
   return (
-    <div className='table-pagination'>
-      <button type='button' onClick={handlePreviousPage} className={currentPage===1 ? 'table-pagination-btn displayed' : 'table-pagination-btn'}>Previous</button>
+    <div className='dtb-pagination'>
+      <button type='button' onClick={handlePreviousPage} className={currentPage===1 ? 'dtb-pagination-btn displayed' : 'dtb-pagination-btn'}>Previous</button>
       {/* Create a button per page */}
       {nbPagesArray.map((elt, index) => (
         <button

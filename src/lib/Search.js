@@ -19,9 +19,9 @@ const Search = ({data,handleDisplayedData,handleIsSearching }) => {
     }
   }
   return (
-    <div className='table-search'>
-        <label htmlFor='search-box'>{`Search: `}</label>
-        <input type='text' id="search-box" name="search" onChange={(evt)=>handleSearch(evt)}></input>
+    <div className='dtb-search'>
+        <label htmlFor='dtb-search'>{`Search: `}</label>
+        <input type='text' id="dtb-search" name="dtb-search" onChange={(evt)=>handleSearch(evt)}></input>
     </div>
   )
 }

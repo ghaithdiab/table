@@ -4,17 +4,17 @@ import PropTypes from "prop-types"
 const Table = ({labels,data,minShow,maxShow,handleSort,sort,sortedData,}) => {
   const {column,isDesc}=sort
   return (
-    <table className='table'>
+    <table className='dtb-table'>
       <thead>
-        <tr className='table-header-row'>
+        <tr className='dtb-table-header-row'>
           {/* first row of labels */}
           {labels.map((label)=>(
-            <th key={"_" + Math.random().toString(36).substring(2,9)} className='tabel-header-cell' onClick={()=>handleSort(label.value)}>
-              <div className='tabel-header-cell-content'>
+            <th key={"_" + Math.random().toString(36).substring(2,9)} className='dtb-tabel-header-cell' onClick={()=>handleSort(label.value)}>
+              <div className='dtb-tabel-header-cell-content'>
                 <span>{label.text}</span>
-                <div className='tabel-header-cell-icons'>
-                  <div className={column===label.value ?!isDesc ? 'tabel-arrow-up active' :'table-arrow-up inactive' :'tabel-arrow-up'}></div>
-                  <div className={column===label.value ?!isDesc ? 'tabel-arrow-down active' :'table-arrow-down inactive' :'tabel-arrow-down'}></div>
+                <div className='dtb-tabel-header-cell-icons'>
+                  <div className={column===label.value ?!isDesc ? 'dtb-tabel-arrow-up active' :'dtb-table-arrow-up inactive' :'dtb-tabel-arrow-up'}></div>
+                  <div className={column===label.value ?!isDesc ? 'dtb-tabel-arrow-down active' :'dtb-table-arrow-down inactive' :'dtb-tabel-arrow-down'}></div>
                 </div>
               </div>
             </th>
@@ -24,15 +24,15 @@ const Table = ({labels,data,minShow,maxShow,handleSort,sort,sortedData,}) => {
       </thead>
       <tbody>
         {/* if the tabel is Empty */}
-        {sortedData.length===0&&(<tr><td className='tabel-row-nomatch' colSpan={labels.length}>
+        {sortedData.length===0&&(<tr><td className='dtb-tabel-row-nomatch' colSpan={labels.length}>
             No matching record found
           </td>
           </tr>)}
           {/* Display only the Data in the current page */}
           {data.map((elt,index)=>{if(index+1>=minShow&&index<maxShow){
-            return(<tr key={"_" + Math.random().toString(36).substring(2,9)} className='tabel-row'>
+            return(<tr key={"_" + Math.random().toString(36).substring(2,9)} className='dtb-tabel-row'>
               {Object.values(elt).map((value,j)=>(
-                <td key={"_" + Math.random().toString(36).substring(2,9)} className={j===0?'tabel-cell first-cell' : 'tabel-cell'}>{value}</td>
+                <td key={"_" + Math.random().toString(36).substring(2,9)} className={j===0?'dtb-tabel-cell first-cell' : 'dtb-tabel-cell'}>{value}</td>
               ))}
             </tr>)
           }
