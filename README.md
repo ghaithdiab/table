@@ -13,7 +13,7 @@ A ready-to-use DataTable component for React projects. It adds features to manip
 
 ### Download
 
-[datatables](https://www.npmjs.com/package/datatables)
+[table-component-react](https://www.npmjs.com/package/table-component-react)
 
 ### Requirements
 

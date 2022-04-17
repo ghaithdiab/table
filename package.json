@@ -1,6 +1,6 @@
 {
-  "name": "table",
-  "version": "0.1.0",
+  "name": "table-component-react",
+  "version": "1.0.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
