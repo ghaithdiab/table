@@ -1,16 +1,25 @@
 {
   "name": "table-component-react",
-  "version": "1.1.0",
+  "version": "1.4.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.0.0",
+    "rimraf": "^3.0.2",
     "web-vitals": "^2.1.4"
+  },
+  "author": "ghaithdiab",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env", "@babel/preset-react"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "build": "SET NODE_ENV=production&&rmdir /s dist && mkdir dist && npx babel src/DataTabels --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -43,15 +52,5 @@
     "sass": "^1.50.0",
     "sass-loader": "^12.6.0",
     "webpack": "^5.72.0"
-  },
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "URL_OF_YOUR_REPOSITORY"
   }
 }
