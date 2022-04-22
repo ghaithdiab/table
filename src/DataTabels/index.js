@@ -4,7 +4,7 @@ import Pagination from './Pagination'
 import Search from './Search'
 import ShowingEntries from './ShowingEntries'
 import Table from './Table'
-import "./DataTable.css"
+import "./index.css"
 import { normalizeText } from './utils'
 const DataTable = ({labels,data}) => {
   const [sortedData,setSortedData]=useState(data)

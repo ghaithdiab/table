@@ -1,6 +1,6 @@
 import React from 'react'
 import { exampleLabels, exampleData } from './examples'
-import DataTable from './lib/DataTable'
+import DataTable from './DataTabels/index'
 
 const App = () => {
   return (
