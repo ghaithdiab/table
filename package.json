@@ -2,6 +2,8 @@
   "name": "table-component-react",
   "version": "1.5.0",
   "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -14,7 +16,8 @@
   "module": "dist/index.js",
   "babel": {
     "presets": [
-      "@babel/preset-env", "@babel/preset-react"
+      "@babel/preset-env",
+      "@babel/preset-react"
     ]
   },
   "scripts": {
@@ -43,7 +46,6 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.16.7",
-    "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
