@@ -11,6 +11,16 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+/**
+ * 
+ * @param {Number} minShow 
+ * @param {Number} maxShow
+ * @param {Number} totalEntries
+ * @param {boolean} isSearching
+ * @param {Number} minFilteredShow
+ * @param {Number} maxFilteredShow
+ * @param {Number} totalEntriesShow
+ */
 var ShowingEntries = function ShowingEntries(_ref) {
   var minShow = _ref.minShow,
       maxShow = _ref.maxShow,

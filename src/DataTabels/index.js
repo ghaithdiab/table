@@ -6,6 +6,11 @@ import ShowingEntries from './ShowingEntries'
 import Table from './Table'
 import "./index.css"
 import { normalizeText } from './utils'
+
+/**
+ * @param {object} labels
+ * @param {object} data
+ */
 const DataTable = ({labels,data}) => {
   const [sortedData,setSortedData]=useState(data)
   const [currentPage,setCurrentPage]=useState(1)

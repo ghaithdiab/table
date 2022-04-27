@@ -47,6 +47,10 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
+/**
+ * @param {object} labels
+ * @param {object} data
+ */
 var DataTable = function DataTable(_ref) {
   var labels = _ref.labels,
       data = _ref.data;

@@ -1,6 +1,6 @@
 {
   "name": "table-component-react",
-  "version": "1.5.1",
+  "version": "1.6.3",
   "dependencies": {
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.9",

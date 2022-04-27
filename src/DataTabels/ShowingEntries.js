@@ -1,5 +1,16 @@
 import React from 'react'
 import PropTypes from "prop-types";
+
+/**
+ * 
+ * @param {Number} minShow 
+ * @param {Number} maxShow
+ * @param {Number} totalEntries
+ * @param {boolean} isSearching
+ * @param {Number} minFilteredShow
+ * @param {Number} maxFilteredShow
+ * @param {Number} totalEntriesShow
+ */
 const ShowingEntries = ({minShow,maxShow,totalEntries,isSearching,minFiltredShow,maxFiltredShow,totalEntriesShow}) => {
   return (
     <div className='dtb-showing'>

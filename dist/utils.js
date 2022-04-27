@@ -13,7 +13,7 @@ var generateID = function generateID() {
 exports.generateID = generateID;
 
 var normalizeText = function normalizeText(text) {
-  return text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+  return text.toString().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
 };
 
 exports.normalizeText = normalizeText;

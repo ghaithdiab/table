@@ -12,6 +12,18 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // import { generateID } from './utils'
+
+/**
+ * 
+ * @param {object} labels
+ * @param {object} data
+ * @param {object} minShow
+ * @param {object} maxShow
+ * @param {Function} handleSort
+ * @param {Function} sort 
+ * @param {Function} sortedData
+ * @returns 
+ */
 var Table = function Table(_ref) {
   var labels = _ref.labels,
       data = _ref.data,

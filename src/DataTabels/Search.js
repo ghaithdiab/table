@@ -1,6 +1,13 @@
 import React from 'react'
 import PropTypes from "prop-types";
 import { normalizeText } from './utils';
+
+/**
+ * 
+ * @param {object} data 
+ * @param {handleDisplayedData} function 
+ * @param {handleIsSearching} function
+ */
 const Search = ({data,handleDisplayedData,handleIsSearching }) => {
   // Filter the data to display based on typed value
   const handleSearch=(evt)=>{

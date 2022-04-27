@@ -13,6 +13,12 @@ var _utils = require("./utils");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+/**
+ * 
+ * @param {object} data 
+ * @param {handleDisplayedData} function 
+ * @param {handleIsSearching} function
+ */
 var Search = function Search(_ref) {
   var data = _ref.data,
       handleDisplayedData = _ref.handleDisplayedData,

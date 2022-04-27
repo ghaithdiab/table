@@ -17,17 +17,17 @@
 	width: 100%;
 	text-align: left;
 }
-.dtb-table-header-row {
+.dtb-tabel-header-row {
 	border-bottom: 1px solid #000;
 }
-.dtb-table-header-cell {
+.dtb-tabel-header-cell {
 	padding: 8px 10px;
 	font-size: 0.9rem;
 }
-.dtb-table-header-cell:hover {
+.dtb-tabel-header-cell:hover {
 	cursor: default;
 }
-.dtb-table-header-cell-content {
+.dtb-tabel-header-cell-content {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
